@@ -1,0 +1,140 @@
+* {
+	p :	#0B2239;
+	S : #4AD295;
+}
+.frame {
+	-fx-pref-width: 900px;
+	-fx-pref-height: 600px;
+}
+.side-Bar {
+	-fx-background-color: p;
+	-fx-pref-width: 100px;
+}
+
+.icon-wrap{
+	-fx-padding: 10px;
+	-fx-pref-height: 150;
+	-fx-spacing: 10px;
+	-fx-alignment: center;
+}
+.lable {
+	-fx-font-family: Century;
+	-fx-font-size: 17px;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+.nav-btm {
+	-fx-padding: 10px;
+	-fx-pref-height: 55px;
+	-fx-pref-width: 20px;
+	-fx-spacing: 10px;
+	-fx-alignment: center-left;
+}
+SVGPath {
+	-fx-fill: white;
+}
+.label1 {
+	-fx-font-size: 25px;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+.nav-btm:hover{
+	-fx-background-color: s;
+	-fx-cursor: hand ;
+}
+
+.footer{
+	-fx-alignment: center;
+	-fx-pref-height: 50px;
+	-fx-padding: 10px;
+}
+.title-wrap{
+	-fx-pref-height: 80px;
+	-fx-alignment: center-left;
+	-fx-padding: 10px;
+}
+
+.title-wrap > Label {
+	-fx-font-size: 28px;
+	-fx-font-weight: bold;
+}
+
+.view {
+	-fx-pref-width: 678px;
+	-fx-pref-height: 580px;
+}
+
+.search-bar {
+	-fx-pref-height: 70px;
+	-fx-padding: 10px;
+	-fx-spacing: 5px;
+	-fx-alignment: center-left;
+}
+.combo {
+	-fx-pref-width: 130px;
+	-fx-background-color: transparent;
+	-fx-border-width: 1px;
+	-fx-border-color: p;
+	-fx-prompt-text-fill: p;
+}
+
+.txt-fld {
+	-fx-border-radius: 5px;
+	-fx-pref-width: 130px;
+	-fx-background-color: transparent;
+	-fx-border-width: 1px;
+	-fx-border-color: p;
+	-fx-prompt-text-fill: p;
+}
+
+.dt-pick {
+	-fx-pref-width: 130px;
+	-fx-background-color: transparent;
+	-fx-border-width: 1px;
+	-fx-border-color: p;
+	-fx-prompt-text-fill: p;
+}
+
+.btm {
+	-fx-pref-width: 65px;
+	-fx-background-color: p;
+	-fx-text-fill: white;
+}
+
+.btm:hover {
+	-fx-background-color: s;
+}
+
+.pad10 {
+	-fx-padding: 0 10 10 10;
+}
+ScrollPane{
+	-fx-fit-to-width: true;
+	-fx-padding: 0 20 10 10;
+}
+FlowPane{
+	-fx-hgap: 10px;
+	-fx-vgap: 10px;
+}
+.active {
+	-fx-background-color: s;
+}
+.cat-box{
+	-fx-pref-width: 200px;
+	-fx-pref-height: 100px;
+	-fx-alignment: center;
+	-fx-border-color: p;
+	-fx-border-radius: 5px;
+}
+.cat-box:hover{
+	-fx-background-color: p;
+	-fx-border-radius: 5px;
+	-fx-cursor: hand;
+}
+.cat-box > Label {
+	-fx-text-fill: p;
+	-fx-font-size: 15px;
+}
+.cat-box:hover > label {
+	-fx-text-fill: white;
+}

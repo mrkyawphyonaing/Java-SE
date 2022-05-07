@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="frame" stylesheets="@bookapp.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainFrame">
+   <children>
+      <VBox styleClass="side-Bar">
+         <children>
+            <VBox prefWidth="192.0" styleClass="icon-wrap">
+               <children>
+                  <ImageView fitHeight="110.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../book1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Line endX="100.0" startX="-100.0" stroke="#eee7e7" strokeWidth="2.0" />
+                  <Label styleClass="lable" text="My Book Store" />
+               </children>
+            </VBox>
+            <VBox fx:id="sideBar" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox onMouseClicked="#showHome">
+                     <children>
+                        <SVGPath content="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z" />
+                        <Label styleClass="label1" text="Home" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="nav-btm" />
+                        <String fx:value="active" />
+                     </styleClass>
+                  </HBox>
+                  <HBox onMouseClicked="#showCategory" styleClass="nav-btm">
+                     <children>
+                        <SVGPath content="M30.5 24h-0.5v-6.5c0-1.93-1.57-3.5-3.5-3.5h-8.5v-4h0.5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h0.5v4h-8.5c-1.93 0-3.5 1.57-3.5 3.5v6.5h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-0.5v-6h8v6h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-0.5v-6h8v6h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5zM6 30h-4v-4h4v4zM18 30h-4v-4h4v4zM14 8v-4h4v4h-4zM30 30h-4v-4h4v4z" />
+                        <Label styleClass="label1" text="Category" />
+                     </children>
+                  </HBox>
+                  <HBox onMouseClicked="#showBooks" styleClass="nav-btm">
+                     <children>
+                        <SVGPath content="M28 4v26h-21c-1.657 0-3-1.343-3-3s1.343-3 3-3h19v-24h-20c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24v-28h-2z" />
+                        <Label styleClass="label1" text="Books" />
+                     </children>
+                  </HBox>
+                  <HBox onMouseClicked="#showAuthor" styleClass="nav-btm">
+                     <children>
+                        <SVGPath content="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z" />
+                        <Label styleClass="label1" text="Author" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="footer">
+               <children>
+                  <Label fx:id="footer" styleClass="lable" text="By JDC" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <HBox styleClass="title-wrap">
+               <children>
+                  <Label fx:id="title" text="My Book store" />
+               </children>
+            </HBox>
+            <StackPane fx:id="viewHolder" prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
